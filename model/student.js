@@ -3,10 +3,10 @@ const SCHEMA = MONGOOSE.Schema;
 const TASKSCHEMA = new SCHEMA({
     name: String,
     lastName: String,
-    age: String,
+    age: Number,
     email: String,
     direction: String,
-    phone: String
+    phone: Number
 })
 
 module.exports = MONGOOSE.model('Student', TASKSCHEMA);
